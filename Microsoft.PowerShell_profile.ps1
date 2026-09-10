@@ -265,7 +265,7 @@ $rightSide = @(
     { Write-Neon "┃" $gray; Write-Host -NoNewline "  "; Write-Neon "y720" $steel; Write-Host -NoNewline "  URL              →  720p" },
     { Write-Neon "┃" $gray; Write-Host -NoNewline "  "; Write-Neon "yq" $steel; Write-Host -NoNewline "    URL              →  escolher qualidade" },
     { Write-Neon "┃" $gray; Write-Host -NoNewline "  "; Write-Neon "yc" $steel; Write-Host -NoNewline "    URL 00:00 00:00  →  cortar trecho" },
-    { Write-Neon "┗━ " $gray; Write-Neon "ycomp" $steel; Write-Host -NoNewline " nome.mp4 MB      →  comprimir (na pasta Downloads)" }
+    { Write-Neon "┗━ " $gray; Write-Neon "ycomp" $steel; Write-Host -NoNewline " nome.mp4 MB      →  comprimir" }
 )
 
 Write-Host ""
