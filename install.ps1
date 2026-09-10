@@ -4,7 +4,7 @@
 
 # 1. Instalar dependências essenciais via winget
 Write-Host "Instalando ferramentas essenciais..." -ForegroundColor Cyan
-winget install Git.Git JanDeDobbeleer.OhMyPosh eza --accept-source-agreements --accept-package-agreements
+winget install Git.Git JanDeDobbeleer.OhMyPosh eza-community.eza --accept-source-agreements --accept-package-agreements
 
 # 2. Clonar o repositório de dotfiles do GitHub
 $dotfiles = "$HOME\dotfiles"
