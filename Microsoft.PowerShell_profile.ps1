@@ -322,3 +322,26 @@ function ls  { eza --icons @args }
 function ll  { eza --icons -l @args }
 function la  { eza --icons -la @args }
 function lt  { eza --icons --tree @args }
+
+
+# ==========================================
+# BACKUP AUTOMÁTICO (DOTFILES)
+# ==========================================
+function push-config {
+    param([string]$Message = "Atualizacao de configuracoes")
+
+    $dotfiles = "$HOME\dotfiles"
+
+    # Copia o PROFILE e a pasta .config atualizados
+    Copy-Item $PROFILE "$dotfiles\Microsoft.PowerShell_profile.ps1" -Force
+    Copy-Item -Recurse "$HOME\.config" "$dotfiles\" -Force
+
+    # Envia as alteracoes para o GitHub
+    Push-Location $dotfiles
+    git add .
+    git commit -m $Message
+    git push
+    Pop-Location
+
+    Write-Host "Configuracoes salvas no GitHub com sucesso!" -ForegroundColor Green
+}
