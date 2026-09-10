@@ -7,7 +7,7 @@ Configurações personalizadas do meu terminal Windows PowerShell (`oh-my-posh`,
 Em um computador recém-formatado, abra o PowerShell e execute o comando abaixo para instalar as ferramentas e restaurar tudo automaticamente:
 
 ```powershell
-irm [https://raw.githubusercontent.com/webautopsy/dotfiles/main/install.ps1](https://raw.githubusercontent.com/webautopsy/dotfiles/main/install.ps1) | iex
+irm https://raw.githubusercontent.com/webautopsy/dotfiles/main/install.ps1 | iex
 ```
 
 ## 🔄 Salvar Alterações (Máquina Atual)
